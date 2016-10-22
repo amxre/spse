@@ -1,0 +1,81 @@
+Downloading/unpacking tox
+  Running setup.py egg_info for package tox
+    
+Downloading/unpacking coveralls
+  Downloading coveralls-1.1.tar.gz
+  Running setup.py egg_info for package coveralls
+    
+Requirement already satisfied (use --upgrade to upgrade): virtualenv>=1.11.2 in /usr/local/lib/python2.7/dist-packages (from tox)
+Downloading/unpacking py>=1.4.17 (from tox)
+  Running setup.py egg_info for package py
+    
+Downloading/unpacking pluggy>=0.3.0,<0.5.0 (from tox)
+  Downloading pluggy-0.4.0.zip
+  Running setup.py egg_info for package pluggy
+    
+    warning: no previously-included files matching '*.pyc' found under directory '*'
+    warning: no previously-included files matching '*.pyo' found under directory '*'
+Downloading/unpacking docopt>=0.6.1 (from coveralls)
+  Downloading docopt-0.6.2.tar.gz
+  Running setup.py egg_info for package docopt
+    
+Downloading/unpacking coverage>=3.6 (from coveralls)
+  Running setup.py egg_info for package coverage
+    
+    warning: no previously-included files found matching 'ci/appveyor.token'
+    no previously-included directories found matching 'doc/_build'
+    no previously-included directories found matching 'tests/eggsrc/build'
+    no previously-included directories found matching 'tests/eggsrc/dist'
+    no previously-included directories found matching 'tests/eggsrc/*.egg-info'
+    warning: no previously-included files matching '*.py[co]' found anywhere in distribution
+Downloading/unpacking requests>=1.0.0 (from coveralls)
+  Running setup.py egg_info for package requests
+    
+    warning: no files found matching 'test_requests.py'
+Installing collected packages: tox, coveralls, py, pluggy, docopt, coverage, requests
+  Running setup.py install for tox
+    error: could not create '/usr/local/lib/python2.7/dist-packages/tox': Permission denied
+    Complete output from command /usr/bin/python -c "import setuptools;__file__='/home/amxre/spse/module1/build/tox/setup.py';exec(compile(open(__file__).read().replace('\r\n', '\n'), __file__, 'exec'))" install --single-version-externally-managed --record /tmp/pip-6hpoeT-record/install-record.txt:
+    running install
+
+running build
+
+running build_py
+
+creating build
+
+creating build/lib.linux-x86_64-2.7
+
+creating build/lib.linux-x86_64-2.7/tox
+
+copying tox/_pytestplugin.py -> build/lib.linux-x86_64-2.7/tox
+
+copying tox/__main__.py -> build/lib.linux-x86_64-2.7/tox
+
+copying tox/_verlib.py -> build/lib.linux-x86_64-2.7/tox
+
+copying tox/_quickstart.py -> build/lib.linux-x86_64-2.7/tox
+
+copying tox/session.py -> build/lib.linux-x86_64-2.7/tox
+
+copying tox/__init__.py -> build/lib.linux-x86_64-2.7/tox
+
+copying tox/config.py -> build/lib.linux-x86_64-2.7/tox
+
+copying tox/interpreters.py -> build/lib.linux-x86_64-2.7/tox
+
+copying tox/hookspecs.py -> build/lib.linux-x86_64-2.7/tox
+
+copying tox/result.py -> build/lib.linux-x86_64-2.7/tox
+
+copying tox/venv.py -> build/lib.linux-x86_64-2.7/tox
+
+running install_lib
+
+creating /usr/local/lib/python2.7/dist-packages/tox
+
+error: could not create '/usr/local/lib/python2.7/dist-packages/tox': Permission denied
+
+----------------------------------------
+Command /usr/bin/python -c "import setuptools;__file__='/home/amxre/spse/module1/build/tox/setup.py';exec(compile(open(__file__).read().replace('\r\n', '\n'), __file__, 'exec'))" install --single-version-externally-managed --record /tmp/pip-6hpoeT-record/install-record.txt failed with error code 1
+Storing complete log in /home/amxre/.pip/pip.log
