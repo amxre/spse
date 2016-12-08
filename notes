@@ -1,3 +1,0 @@
-create virtualenvs for python3 using:
-virtualenv env3 --python=/usr/bin/python3
-source: https://github.com/pypa/virtualenv/issues/463

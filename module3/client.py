@@ -1,15 +1,18 @@
 #!/usr/bin/python
 
-import socket
+from socket import *
 import sys
 
-tcpSocket = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
+# Create a TCP Client Socket
+client = socket(AF_INET, SOCK_STREAM)
 
-tcpSocket.connect((sys.argv[1], 8000))
+# Connect to the target 1<ip> 2<port>
+client.connect((sys.argv[1], int(sys.argv[2])))
 
 while 1 :
-	userInput = raw_input("Please enter a string: ")
-	tcpSocket.send(userInput)
-	print tcpSocket.recv(2048)
+	userInput = raw_input("Send data to server> ")
+	client.send(userInput)				# Send data to server
+	print "Server sent:", client.recv(2048)		# Receive and print serve response
 
-tcpSocket.close()
+# Close connection
+client.close()
